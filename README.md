@@ -53,4 +53,51 @@ function performOperation(secondInteger, secondDecimal, secondString) {
 ```
 
 
+# Day 1
 
+## Simple Arithmetic
+
+```javascript
+function getArea(length, width) {
+    let area;
+    // Write your code here
+    area = length * width
+    return area;
+}
+
+function getPerimeter(length, width) {
+    let perimeter;
+    // Write your code here
+    perimeter = 2 * (length + width)
+    
+    return perimeter;
+}
+```
+
+## Creating a function that returns the factorial of an integer
+
+``` javascript
+
+const factorial = (n) => {
+    let factorial = n
+    
+    while (n > 1) {
+        n--
+        factorial *= n
+    }
+    
+    return factorial
+}
+
+```
+
+## Using Math.PI
+
+``` javascript
+function main() {
+    const PI = Math.PI
+    const radius = readLine()
+    console.log(PI * (radius ** 2))
+    console.log(PI * 2 * radius)
+}
+```
