@@ -166,5 +166,25 @@ function getLetter(s) {
 
 ```
 
+## Loop
+'
+``` javascript
+function vowelsAndConsonants(s) {
+    const vowels = ["a", "e", "i", "o", "u"]
+    for (let i in s) {
+        if (vowels.includes(s[i])) {
+            console.log(s[i])
+        }
+    }
+        
+    for (let i in s) {
+        if (vowels.includes(s[i]) === false) {
+            console.log(s[i])
+        }
+    }
+}
+
+```
+
 # Day 3
 
