@@ -217,7 +217,20 @@ function getSecondLargest(nums) {
 getSecondLargest([700, 2, 3, 6, 1000, 500]) // returns `700`
 ```
 
+## Try, catch
 
+``` javascript
+function reverseString(s) {
+    try {
+        // output the reversed string
+    console.log(s.split("").reverse().join(""))
+    } catch(error) {
+        // if the parameter is not a string, the error message will be logged along with the invalid input
+        console.log(error.message)
+        console.log(s)
+    }
+}
 
+```
 
 
