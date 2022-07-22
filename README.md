@@ -292,3 +292,23 @@ function getCount(objects) {
     return count
 }
 ```
+
+
+## Create a class
+
+``` javascript
+class Polygon {
+    constructor(lengths) {
+        this.lengths = lengths
+    };
+    
+    perimeter() {
+        let perimeter = 0
+        for (let length of this.lengths) {
+            perimeter += length
+        }
+        return perimeter
+    }
+}
+
+```
