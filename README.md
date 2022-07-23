@@ -312,3 +312,61 @@ class Polygon {
 }
 
 ```
+
+# Day 5
+
+## Class extension
+
+``` javascript
+class Rectangle {
+    constructor(w, h) {
+        this.w = w;
+        this.h = h;
+    }
+}
+
+/*
+ *  Write code that adds an 'area' method to the Rectangle class' prototype
+ */
+Rectangle.prototype.area = function() {
+    return this.w * this.h
+} 
+/*
+ * Create a Square class that inherits from Rectangle and implement its class constructor
+ */
+
+class Square extends Rectangle {
+    constructor(w){
+        super(w)
+        this.h = w
+    }
+}
+```
+
+## Find s1 and s2 of Rectangle given area and perimeter
+
+``` javascript
+function sides(literals, ...expressions) {
+   const A = expressions[0]
+   const P = expressions[1]
+
+   let s1 = (P + Math.sqrt((P**2) - (16 * A)))/4
+   let s2 = (P - Math.sqrt((P**2) - (16 * A)))/4
+   
+   return [s1, s2].sort()
+}
+```
+
+## Using an arrow function
+
+``` javascript
+function sides(literals, ...expressions) {
+   const A = expressions[0]
+   const P = expressions[1]
+
+   let s1 = (P + Math.sqrt((P**2) - (16 * A)))/4
+   let s2 = (P - Math.sqrt((P**2) - (16 * A)))/4
+   
+   return [s1, s2].sort()
+}
+```
