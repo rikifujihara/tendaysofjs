@@ -370,3 +370,38 @@ function sides(literals, ...expressions) {
    return [s1, s2].sort()
 }
 ```
+
+## CA JS morning challenge - function that multiplies any number of arguments
+
+``` javascript
+const multipleArguments = (...args) => {
+	// declare variable to store answer
+	answer = 1
+	if (args.length === 0){
+		// return 0 if no elements in the args array
+		return 0
+	} else {
+		// loop through each argument in ...args
+		for (let num of args){
+			// multiply the answer by the number
+			answer *= num
+		}
+	}
+	//return the answer
+	return answer
+}
+```
+
+## Simple Codewars challenge
+
+``` javascript
+// log salary times 10 if bonus is true, otherwise just log salary. Must be prefixed with pound Euro symbol
+function bonusTime(salary, bonus) {
+    answer = "\u00A3"
+    if (bonus) {
+      console.log(answer + String(Number(salary) * 10))
+    } else {
+      console.log(answer + String(salary))
+    }
+}
+```

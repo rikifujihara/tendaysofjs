@@ -1,6 +1,12 @@
-
-const revstr = (s) => {
-    return s.split("").reverse().join("")
+function bonusTime(salary, bonus) {
+    answer = "\u00A3"
+    if (bonus) {
+      console.log(answer + String(Number(salary) * 10))
+    } else {
+      console.log(answer + String(salary))
+    }
 }
 
-console.log("\n" + revstr("hello"))
+bonusTime(1000, true)
+console.log("---------")
+bonusTime(1000, false)
